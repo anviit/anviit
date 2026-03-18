@@ -15,7 +15,7 @@ ML engineer focused on the systems layer: how models run fast, how decisions get
 | Fused AdamW (50M params) | **3.45×** | 177 GB/s |
 | Inference attention (B=2) | **3.94×** | 95 GB/s |
 
-→ [`llm-sys`](https://github.com/dunkinflicka/llm-sys) — RMSNorm, LayerNorm, FlashAttention, fused AdamW, inference attention. Every kernel validated against fp32 reference, benchmarked with `triton.testing.do_bench`.
+→ [`triton-llm-kernels`](https://github.com/dunkinflicka/triton-llm-kernels) — RMSNorm, LayerNorm, FlashAttention, fused AdamW, inference attention. Every kernel validated against fp32 reference, benchmarked with `triton.testing.do_bench`.
 
 ---
 
@@ -29,7 +29,7 @@ ML engineer focused on the systems layer: how models run fast, how decisions get
 | Cache hit rate | 81% |
 | Success rate @ concurrency=10 | 100% |
 
-→ [`llm-inference-stack`](https://github.com/dunkinflicka/llm-inference-stack) — FastAPI gateway → Redis cache → FP16 PyTorch → RTX 4050L. Fused Triton attention kernel, asyncio-locked GPU access, fire-and-forget cache writes.
+→ [`llm-inference-serving`](https://github.com/dunkinflicka/llm-inference-serving) — FastAPI gateway → Redis cache → FP16 PyTorch → RTX 4050L. Fused Triton attention kernel, asyncio-locked GPU access, fire-and-forget cache writes.
 
 ---
 
