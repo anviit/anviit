@@ -1,4 +1,4 @@
-# Anvit More — ML Systems · GPU Kernels · Applied RL
+# Anvit More - ML Systems · GPU Kernels · Applied RL
 
 ML engineer focused on the systems layer: how models run fast, how decisions get made under uncertainty, how inference holds up in production.
 
